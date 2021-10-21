@@ -2,7 +2,6 @@ package br.com.example.navigation
 
 import android.content.Context
 import android.content.Intent
-import br.com.example.certificabio.navigation.IntentKey
 import javax.inject.Inject
 import javax.inject.Provider
 

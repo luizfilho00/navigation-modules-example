@@ -1,3 +1,3 @@
-package br.com.example.certificabio.navigation
+package br.com.example.navigation
 
 interface IntentKey

@@ -1,8 +1,8 @@
 package br.com.example.navigationexample
 
 import android.os.Bundle
+import br.com.example.directions.FeatureXNavDirection
 import br.com.example.navigation.INavigator
-import br.com.example.navigation.keys.ModuleAIntentKey
 import dagger.android.support.DaggerAppCompatActivity
 import javax.inject.Inject
 
@@ -13,7 +13,7 @@ class MainActivity : DaggerAppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        startActivity(navigator.createIntent(this, ModuleAIntentKey))
+        startActivity(navigator.createIntent(this, FeatureXNavDirection()))
         finish()
     }
 }

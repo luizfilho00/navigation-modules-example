@@ -35,8 +35,9 @@ android {
 dependencies {
     //Modules
     implementation project(path: ':navigation')
-    implementation project(path: ':modulea')
-    implementation project(path: ':moduleb')
+    implementation project(path: ':directions')
+    implementation project(path: ':featurex')
+    implementation project(path: ':featurey')
 
     // Libraries
     implementation(coreKtx)

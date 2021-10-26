@@ -5,10 +5,10 @@ import android.content.Intent
 import javax.inject.Inject
 import javax.inject.Provider
 
-typealias IntentResolverMap = Map<Class<out IntentKey>, @JvmSuppressWildcards Provider<IntentResolver<*>>>
+typealias IntentResolverMap = Map<Class<out NavDirection>, @JvmSuppressWildcards Provider<IntentResolver<*>>>
 
 interface INavigator {
-    fun createIntent(context: Context, key: IntentKey): Intent
+    fun createIntent(context: Context, key: NavDirection): Intent
 }
 
 class Navigator @Inject constructor(
@@ -16,8 +16,8 @@ class Navigator @Inject constructor(
 ) : INavigator {
 
     @Suppress("UNCHECKED_CAST")
-    override fun createIntent(context: Context, key: IntentKey): Intent {
-        val resolver = intentResolvers[key::class.java]?.get() as? IntentResolver<IntentKey>
+    override fun createIntent(context: Context, key: NavDirection): Intent {
+        val resolver = intentResolvers[key::class.java]?.get() as? IntentResolver<NavDirection>
         return resolver?.getIntent(context, key) ?: throw IllegalStateException("Cannot resolve intent key $key")
     }
 }

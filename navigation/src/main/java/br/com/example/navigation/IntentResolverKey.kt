@@ -4,4 +4,4 @@ import dagger.MapKey
 import kotlin.reflect.KClass
 
 @MapKey
-annotation class IntentResolverKey(val clazz: KClass<out IntentKey>)
+annotation class IntentResolverKey(val clazz: KClass<out NavDirection>)

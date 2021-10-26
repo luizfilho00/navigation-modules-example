@@ -1,9 +1,9 @@
 package br.com.example.navigationexample
 
 import android.content.Context
-import br.com.example.modulea.ActivityAModule
-import br.com.example.moduleb.ActivityBModule
-import br.com.example.navigation.NavigatorModule
+import br.com.example.featurex.FeatureXModule
+import br.com.example.featurey.FeatureYModule
+import br.com.example.navigation.NavigationModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
@@ -14,9 +14,9 @@ import javax.inject.Singleton
     modules = [
         AndroidInjectionModule::class,
         MainActivityModule::class,
-        ActivityAModule::class,
-        ActivityBModule::class,
-        NavigatorModule::class
+        FeatureXModule::class,
+        FeatureYModule::class,
+        NavigationModule::class
     ]
 )
 interface AppComponent {

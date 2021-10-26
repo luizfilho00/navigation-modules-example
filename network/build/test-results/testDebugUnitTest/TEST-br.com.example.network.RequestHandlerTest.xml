@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.com.example.network.RequestHandlerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-25T20:04:47" hostname="DESKTOP-LATSM44" time="0.326">
+  <properties/>
+  <testcase name="caseCompose" classname="br.com.example.network.RequestHandlerTest" time="0.326"/>
+  <system-out><![CDATA[Thread[RxNewThreadScheduler-1,5,main]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

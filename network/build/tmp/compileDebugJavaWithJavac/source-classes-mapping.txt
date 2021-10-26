@@ -1,2 +1,0 @@
-br/com/example/network/BuildConfig.java
- br.com.example.network.BuildConfig
